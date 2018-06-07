@@ -1,0 +1,2 @@
+/src/*  https://cran.rstudio.com/src/:splat
+/bin/windows/*  https://cran.rstudio.com/bin/windows/:splat

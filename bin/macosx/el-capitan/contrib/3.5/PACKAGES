@@ -1,0 +1,323 @@
+Package: BayesBD
+Version: 1.2
+Imports: Rcpp (>= 0.12.5), shiny, mritc, png, jpeg
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL (>= 3)
+MD5sum: bc934e9c735a3ac0d355b7771cd1e746
+
+Package: bigGP
+Version: 0.1-6
+Depends: R (>= 3.0.0), Rmpi (>= 0.6-2), methods
+Suggests: rlecuyer, fields
+License: GPL (>= 2)
+OS_type: unix
+MD5sum: a12bac3b5d6ab46730ccaeb8ee3ff234
+
+Package: bioacoustics
+Version: 0.1.5
+Depends: R (>= 3.3.0)
+Imports: htmltools, graphics, grDevices, methods, moments, Rcpp (>=
+        0.12.13), stringr, tools, tuneR (>= 1.3.0)
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown
+License: GPL-3
+MD5sum: f6bb09f871bd1cc452801c1fcdbe16ff
+
+Package: cairoDevice
+Version: 2.25
+Depends: R (>= 2.12.0)
+Imports: grDevices
+License: GPL
+MD5sum: 11f6bf8f91882a8f1df7b8ec485d833e
+
+Package: CARrampsOcl
+Version: 0.1.4
+Imports: OpenCL, fields
+Suggests: coda
+License: GPL (>= 3)
+MD5sum: eae0e86050b92d77258d2c631ffba1ec
+
+Package: ggdmc
+Version: 0.2.5.2
+Depends: R (>= 3.4.0)
+Imports: Rcpp (>= 0.12.10), coda, rtdists, ggmcmc (>= 0.7.3), stats,
+        utils, data.table (>= 1.10.4), tmvtnorm, ggplot2, matrixStats
+LinkingTo: Rcpp (>= 0.12.10), RcppArmadillo (>= 0.7.100.3.0), BH
+License: GPL-2
+MD5sum: 73f13fb99970af8628bb3c746521d3ef
+
+Package: GrammR
+Version: 1.1.0
+Depends: R (>= 3.1.0),
+Imports: gWidgets, RGtk2, gWidgetsRGtk2, MASS, cluster, rgl, GUniFrac,
+        ape
+Suggests: rglwidget
+License: LGPL-3
+MD5sum: 806067a326d1378634d3181add389a99
+
+Package: h5
+Version: 0.9.9
+Depends: R (>= 3.2)
+Imports: Rcpp (>= 0.11.5), methods
+LinkingTo: Rcpp
+Suggests: testthat, roxygen2, zoo, microbenchmark, knitr, rmarkdown
+License: BSD_2_clause + file LICENSE
+MD5sum: e77b51b4b930c57a8143d62f316609c9
+
+Package: kazaam
+Version: 0.1-0
+Depends: R (>= 3.0.0), pbdMPI (>= 0.3-0)
+Imports: methods, stats
+License: BSD 2-clause License + file LICENSE
+MD5sum: 5c9d0af7c1c4eacc8d7c6b76a869a99f
+
+Package: metaMix
+Version: 0.2
+Depends: R (>= 3.0.1)
+Imports: data.table (>= 1.9.2), Matrix, gtools, Rmpi, ggplot2
+Suggests: knitr
+License: GPL-3
+MD5sum: 3e0bb9499638e446bf97fd0e5611a3c7
+
+Package: mixAK
+Version: 5.1
+Depends: R (>= 3.0.0), colorspace, lme4 (>= 1.0)
+Imports: graphics, stats, splines, fastGHQuad, mnormt, parallel, coda
+License: GPL (>= 3)
+MD5sum: 376d3f87450669f0706b3e42e05a3efe
+
+Package: mritc
+Version: 0.5-1
+Depends: R (>= 2.14.0), lattice (>= 0.18-8), misc3d (>= 0.8-1),
+        oro.nifti(>= 0.4.0)
+Imports: methods
+Suggests: tkrplot (>= 0.0-23)
+License: GPL
+MD5sum: 115ffae60d6ddb0121e5279cb1e3d349
+
+Package: multistateutils
+Version: 1.2.0
+Imports: Rcpp (>= 0.12.10), data.table, dplyr, magrittr, networkD3,
+        survival, tidyr
+LinkingTo: Rcpp
+Suggests: flexsurv, mstate, microbenchmark, rmarkdown, knitr, testthat,
+        covr
+License: GPL (>= 2)
+MD5sum: 660b5748d338b71206d97079972981a2
+
+Package: NetworkInference
+Version: 1.2.2
+Imports: Rcpp (>= 0.12.5), assertthat, checkmate, ggplot2, ggrepel,
+        stats
+LinkingTo: Rcpp, RcppProgress
+Suggests: testthat, knitr, rmarkdown, pander, igraph, utils, dplyr
+License: MIT + file LICENSE
+MD5sum: dd2a42a0df492101d507069229803c76
+
+Package: OpenCL
+Version: 0.1-3
+Depends: R (>= 2.0.0)
+License: BSD
+MD5sum: 94e497c19841ddf809f084a4bec358b9
+
+Package: pbdBASE
+Version: 0.4-5.1
+Depends: R (>= 3.0.0), methods
+Imports: pbdMPI (>= 0.3-1), pbdSLAP(>= 0.2-1), utils
+License: Mozilla Public License 2.0
+MD5sum: a288ebef33fc5634c712ef2d9168105b
+
+Package: pbdDEMO
+Version: 0.3-1
+Depends: R (>= 3.0.0), methods, pbdMPI (>= 0.3-0), pbdBASE(>= 0.4-3),
+        pbdDMAT(>= 0.4-0)
+Enhances: maps, RColorBrewer, pbdNCDF4 (>= 0.1-2), pmclust, MixSim,
+        EMCluster, phyclust, MASS, rjags
+License: Mozilla Public License 2.0
+MD5sum: fd4de2f907a429f56597828e7daf41b4
+
+Package: pbdDMAT
+Version: 0.4-2
+Depends: R (>= 3.0.0), pbdMPI (>= 0.3-1), pbdBASE (>= 0.4-5), stats
+Imports: utils, methods
+License: GPL (>= 2)
+MD5sum: 78a41c0cb9f635eaad330189aead2f7b
+
+Package: pbdMPI
+Version: 0.3-8
+Depends: R (>= 3.3.0), methods
+Imports: rlecuyer
+Enhances: pbdPROF, pbdZMQ
+License: Mozilla Public License 2.0
+MD5sum: e95e6b4c5b5bd95621a0612a5af9cfbd
+
+Package: pbdPROF
+Version: 0.3-1
+Depends: R (>= 3.0.0)
+Imports: methods, stats, utils
+License: Mozilla Public License 2.0
+MD5sum: 375d6b529f82697459c818cd77b26799
+
+Package: pbdSLAP
+Version: 0.2-4
+Depends: R (>= 3.0.0), methods, rlecuyer, pbdMPI (>= 0.3-1)
+License: Mozilla Public License 2.0
+MD5sum: fdfda8524ccbf88d65eccf280be83306
+
+Package: playwith
+Version: 0.9-54
+Depends: R (>= 2.7.0), lattice (>= 0.16-3), cairoDevice, gWidgetsRGtk2
+        (>= 0.0-45), grid
+Imports: RGtk2 (>= 2.20.1), gWidgets (>= 0.0-30), gridBase, grDevices,
+        graphics, stats, utils
+Suggests: latticist, zoo, MASS, ggplot2, sp
+License: GPL (>= 2)
+MD5sum: 0fa00637c0503188d1b6cdef24d91250
+
+Package: pmclust
+Version: 0.2-0
+Depends: R (>= 3.0.0), pbdMPI (>= 0.3-1), pbdBASE (>= 0.4-3), pbdDMAT
+        (>= 0.4-0)
+Imports: methods, MASS
+Enhances: MixSim
+License: GPL (>= 2)
+MD5sum: 851f4e57873a82eabff5f601577185b0
+
+Package: RcppMeCab
+Version: 0.0.1.2
+Depends: R (>= 3.4.0)
+Imports: Rcpp, RcppParallel
+LinkingTo: Rcpp, RcppParallel, BH
+License: GPL
+MD5sum: e644aa020bb40c9ddc3d426c02a35f68
+
+Package: RcppRedis
+Version: 0.1.8
+Imports: methods, Rcpp (>= 0.11.0), RApiSerialize
+LinkingTo: Rcpp, RApiSerialize, BH
+Suggests: rredis, RUnit, RcppMsgPack
+License: GPL (>= 2)
+MD5sum: 8d8c32af650c76f279cb34b3d3dc5760
+
+Package: Rgnuplot
+Version: 1.0.3
+Depends: R (>= 2.7.0), methods
+Enhances: colorspace, png, rgdal, sp
+License: GPL (>= 3)
+MD5sum: 6eada73e87ea75956584a9ec9e0d7abf
+
+Package: RGtk2
+Version: 2.20.35
+Depends: R (>= 3.4.0)
+Imports: methods
+License: GPL
+MD5sum: 34e5e3a05e06604910e26986070cd5cf
+
+Package: RGtk2Extras
+Version: 0.6.1
+Depends: methods, RGtk2(>= 2.12.8)
+Suggests: gWidgetsRGtk2
+License: GPL (>= 2)
+MD5sum: 354d764769df9e851b0fb45d74b25c35
+
+Package: RmecabKo
+Version: 0.1.6.2
+Imports: Rcpp, stringr
+LinkingTo: Rcpp
+License: GPL (>= 2)
+MD5sum: 2721009328397ed9fbf0dc82be74344a
+
+Package: Rmpi
+Version: 0.6-7
+Depends: R (>= 2.15.1)
+Imports: parallel
+License: GPL (>= 2)
+MD5sum: 50b1d0e584d2c69d17708e2614103a92
+
+Package: rpg
+Version: 1.6
+Depends: R (>= 3.0.0)
+Imports: Rcpp (>= 0.11.1), uuid (>= 0.1-1), RApiSerialize (>= 0.1.0),
+        getPass (>= 0.1.0)
+LinkingTo: Rcpp, RApiSerialize
+Suggests: foreach (>= 1.4.2), doParallel (>= 1.0.0), hflights (>= 0.1)
+License: GPL (>= 2)
+MD5sum: 024c104fcd8309dde4c5914f0ec46959
+
+Package: Rpoppler
+Version: 0.1-0
+License: GPL-2
+OS_type: unix
+MD5sum: 28e0505bd8e084a105deec0879c3b195
+
+Package: RQuantLib
+Version: 0.4.5
+Depends: R (>= 2.10.0)
+Imports: methods, Rcpp (>= 0.11.0), stats, graphics, zoo
+LinkingTo: Rcpp
+Suggests: rgl, RUnit, shiny
+License: GPL (>= 2)
+MD5sum: 888030a49a03c91c0be8c7ff9e2062d9
+
+Package: rsgcc
+Version: 1.0.6
+Depends: R (>= 2.15.1), biwt, cairoDevice, fBasics, grDevices, gplots,
+        gWidgets, gWidgetsRGtk2, minerva, parmigene, stringr, snowfall
+Suggests: bigmemory, ctc
+License: GPL (>= 2)
+MD5sum: 338c2584e270c484a51f10e143843346
+
+Package: RVowpalWabbit
+Version: 0.0.12
+Depends: R (>= 2.12.0)
+Imports: Rcpp
+LinkingTo: Rcpp
+License: GPL (>= 2)
+OS_type: unix
+MD5sum: 1ae3784107340b4a97cebebf474a0c40
+
+Package: strex
+Version: 0.1.0
+Depends: stringr
+Imports: Rcpp, magrittr, checkmate, matrixStats, ore, purrr, rlang,
+        tibble, glue
+LinkingTo: Rcpp
+Suggests: testthat, knitr, rmarkdown, pacman, covr, spelling
+License: GPL-3
+MD5sum: 699d173251d427402fa167cd3224b83d
+
+Package: timechange
+Version: 0.0.1
+Depends: R (>= 3.3)
+Imports: Rcpp (>= 0.12)
+LinkingTo: Rcpp
+Suggests: testthat, knitr
+License: GPL-3
+MD5sum: 8f2ebaf76d2b61bcb3164a20b276f749
+
+Package: wand
+Version: 0.2.0
+Depends: R (>= 3.2.0)
+Imports: dplyr, purrr, rappdirs, stats, stringi, tibble, tidyr, utils,
+        Rcpp
+LinkingTo: Rcpp
+Suggests: testthat
+License: AGPL
+MD5sum: 54065d227582646f5b5775b6dd5387dd
+
+Package: WMCapacity
+Version: 0.9.6.7
+Depends: R (>= 2.10), gtools, gWidgets, gWidgetsRGtk2, coda,
+        cairoDevice
+Imports: RGtk2, grDevices, XML
+License: GPL-2
+MD5sum: 81e420d74ffb3b08a7c01d14838608f1
+
+Package: zstdr
+Version: 0.1.1
+Imports: Rcpp (>= 0.12.0)
+LinkingTo: Rcpp
+Suggests: testthat
+License: GPL (>= 2)
+OS_type: unix
+MD5sum: 98b139f9be2b31ba5d39642079b718b5

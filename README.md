@@ -1,14 +1,14 @@
 # Extra Binary R packages for the Homebrew R (Cask)
 
-[![Travis build status](https://travis-ci.com/yihui/homebrew-cran-extra.svg?branch=master)](https://travis-ci.com/yihui/homebrew-cran-extra)
+[![build-extra](https://github.com/yihui/homebrew-cran-extra/actions/workflows/build-extra.yaml/badge.svg)](https://github.com/yihui/homebrew-cran-extra/actions)
 
 The repository https://macos.rbind.io ([Github repo](https://github.com/yihui/homebrew-cran-extra)) provides some binary R packages for the Homebrew (cask) version of base R that are currently missing on CRAN, in a similar spirit as the "CRAN extras" repository for Windows: https://www.stats.ox.ac.uk/pub/RWin/. If you are using the Homebrew version of R on the latest version of macOS, you may set the `repos` option in R first:
 
 ```r
 # you may do this in your ~/.Rprofile so you don't have to do it every time
 options(repos = c(
-  CRAN = 'https://cran.rstudio.com',
-  CRANextra = 'https://macos.rbind.io'
+  CRANextra = 'https://macos.rbind.io',
+  CRAN = 'https://cran.rstudio.com'
 ))
 ```
 
@@ -22,7 +22,7 @@ install.packages(c('cairoDevice', 'RGtk2'))
 
 To see which packages are available, use the function `available.packages()` in R:
 
-```{r}
+```r
 rownames(available.packages(
   repos = 'https://macos.rbind.io', type = 'binary'
 ))
@@ -35,7 +35,7 @@ CRAN maintainers have provided binaries for most R packages (big thanks!), but a
 To use this repository, you are expected to install the cask `r` from Homebrew (instead of the formula `brew install r`):
 
 ```sh
-brew cask install r
+brew install --cask r
 ```
 
 The R installer you manually downloaded and installed from CRAN should also work, but it is not tested here.
@@ -50,14 +50,14 @@ The repository https://macos.rbind.io does not provide binary packages of these 
 
 1. Packages of which the system dependencies are not available in Homebrew (e.g., `rggobi`) or too difficult to install (e.g., `kmcudaR`).
 
-The repository is automatically updated daily from [Travis CI](https://travis-ci.com/yihui/homebrew-cran-extra), which means if a new version of a source R package appears on CRAN, its binary package should be available in this repository in less than 24 hours (if it satisfied the above conditions).
+The repository is automatically updated daily from [Github Action](https://github.com/yihui/homebrew-cran-extra/actions), which means if a new version of a source R package appears on CRAN, its binary package should be available in this repository in less than 24 hours (if it satisfies the above conditions).
 
 ## Instructions on system dependencies
 
 Some packages only require system dependencies at the build time, e.g., the R package **xml2** requires the brew package `libxml2` when building it from source, but `libxml2` is no longer needed once the binary package is built (after `install.packages('xml2')`, you can remove `libxml2`). However, some packages still need the system dependencies at the run time, such as **RGtk2** (you cannot `brew uninstall gtk+`). To install the system dependencies after installing a binary R package from `macos.rbind.io`, you may try:
 
 ```r
-devtools::install_github('yihui/xfun')
+install.packages('xfun')
 xfun:::install_brew_deps()
 ```
 
